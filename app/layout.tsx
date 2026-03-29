@@ -12,8 +12,8 @@ import Header from "@/components/header";
 const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Diego Velasquez Portfolio",
-  description: "Portfolio Diego Velasquez",
+  title: "Diego Velasquez",
+  description: "Portfolio de Diego Velasquez",
 };
 
 export default function RootLayout({
