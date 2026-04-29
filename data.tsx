@@ -1,31 +1,26 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech } from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Rss, Crop, Pencil, Computer, Book, Rocket, Speech, Instagram, Facebook, Mail } from "lucide-react";
 
 export const socialNetworks = [
     {
         id: 1,
-        logo: <Youtube size={30} strokeWidth={2} />,
-        src: "#!",
+        logo: <Instagram size={30} strokeWidth={2} />,
+        src: "https://www.instagram.com/diegoandres.dj/",
     },
     {
         id: 2,
         logo: <Linkedin size={30} strokeWidth={2} />,
-        src: "#!",
+        src: "https://www.linkedin.com/in/diegovelasquez22/",
     },
     {
         id: 3,
-        logo: <Twitter size={30} strokeWidth={2} />,
-        src: "#!",
+        logo: <Facebook size={30} strokeWidth={2} />,
+        src: "https://www.facebook.com/diego.velasquez.94695",
     },
     {
         id: 4,
-        logo: <Rss size={30} strokeWidth={2} />,
-        src: "#!",
-    },
-    {
-        id: 5,
-        logo: <Twitch size={30} strokeWidth={2} />,
-        src: "#!",
-    },
+        logo: <Mail size={30} strokeWidth={2} />,
+        src:"mailto:diego.a.v3005@gmail.com",
+    }
 ];
 
 
