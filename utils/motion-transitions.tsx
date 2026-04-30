@@ -45,7 +45,7 @@ export const fadeIn = (position: string) => {
             },
         },
         hidden: {
-            y: position === 'bottom' ? -80 : 0,
+            y: position === 'bottom' ? -80 : 80,
             x: position === 'right' ? 80 : 0,
             opacity: 0,
             transition: {
