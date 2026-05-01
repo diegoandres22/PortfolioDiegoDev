@@ -1,4 +1,4 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Rss, Crop, Pencil, Computer, Book, Rocket, Speech, Instagram, Facebook, Github } from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Rss, Crop, Pencil, Computer, Book, Rocket, Speech, Instagram, Facebook, Github, Workflow, Building2, Brain, BarChart3 } from "lucide-react";
 
 export const socialNetworks = [
     {
@@ -19,7 +19,7 @@ export const socialNetworks = [
     {
         id: 4,
         logo: <Github size={30} strokeWidth={2} />,
-        src:"https://github.com/diegoandres22",
+        src: "https://github.com/diegoandres22",
     }
 ];
 
@@ -120,11 +120,7 @@ export const dataCounter = [
 ];
 
 export const serviceData = [
-    {
-        icon: <Crop />,
-        title: "Branding",
-        description: "Desarrollo de una identidad de marca sólida y coherente, incluyendo diseño de logotipo, colores y elementos visuales",
-    },
+
     {
         icon: <Pencil />,
         title: "Diseño web",
@@ -133,18 +129,28 @@ export const serviceData = [
     {
         icon: <Computer />,
         title: "Desarrollo web",
-        description: "Diseño y desarrollo de sitios web a medida, adaptados a tus necesidades",
+        description: "Desarrollo de sitios, paginas y aplicaciones web a medida, adaptados a tus necesidades",
     },
     {
-        icon: <Book />,
-        title: "Copywriting",
-        description: "Creación de contenido persuasivo y atractivo que capta la atención de tu audiencia",
+        icon: <Brain />,
+        title: "IA",
+        description: "Aplicación de IA en tareas para automatizar , mejorar  y resolver necesidades operativas de forma más eficiente."
     },
     {
-        icon: <Rocket />,
-        title: "SEO",
-        description: "Optimización de tu presencia en línea mediante estrategias de SEO avanzadas, ",
+        icon: <Workflow />,
+        title: "Automatización",
+        description: "Diseño e implementación de flujos automatizados que eliminan tareas, reducen tiempos y mejoran la eficiencia."
     },
+    {
+        icon: <Building2 />,
+        title: "Integración",
+        description: "Uso de herramientas empresariales para centralizar, mejorar y facilitar la toma de decisiones dentro de la organización."
+    },
+    {
+        icon: <BarChart3 />,
+        title: "Análisis en operación",
+        description: "Evaluación y análisis para identificar oportunidades de mejora, optimizar recursos y reducir costos."
+    }
 ];
 
 export const dataPortfolio = [
