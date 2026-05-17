@@ -48,13 +48,7 @@ export const itemsNavbar = [
         title: "Target",
         icon: <CodeSquare size={25} strokeWidth={2} />,
         link: "/portfolio",
-    },
-    {
-        id: 5,
-        title: "Home",
-        icon: <Speech size={25} strokeWidth={2} />,
-        link: "/testimonials",
-    },
+    }
 ];
 
 export const dataAboutPage = [
