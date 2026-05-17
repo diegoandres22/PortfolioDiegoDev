@@ -155,61 +155,49 @@ export const serviceData = [
 
 export const dataPortfolio = [
     {
+        id: 4,
+        title: "Patea la perola",
+        image: "/image-4.jpg",
+        urlGithub: "#!",
+        urlDemo: "https://patealaperola.vercel.app/",
+    },
+    {
         id: 1,
-        title: "Web Pro",
+        title: "beescend",
         image: "/image-1.jpg",
         urlGithub: "#!",
-        urlDemo: "#!",
+        urlDemo: "https://beescend.com/",
     },
     {
         id: 2,
-        title: "Desarrollo Web Ágil",
+        title: "Tokin",
         image: "/image-2.jpg",
         urlGithub: "#!",
-        urlDemo: "#!",
+        urlDemo: "https://curso.tokinprivacy.io/formacion/privacidad-total",
     },
     {
         id: 3,
-        title: "Estrategias Web",
+        title: "Tribu Caribe",
         image: "/image-3.jpg",
         urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 4,
-        title: "Ideas Creativas",
-        image: "/image-4.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
+        urlDemo: "https://tribu-caribe-platform.vercel.app/",
     },
     {
         id: 5,
-        title: "Webs Impactantes",
+        title: "Pedido automatizado",
         image: "/image-5.jpg",
         urlGithub: "#!",
-        urlDemo: "#!",
+        urlDemo: "https://forms.office.com/pages/responsepage.aspx?id=EplYV4vVe0qUwvAq70_NonBvEBpsTyNCtYoAR0M9YpBUNllDUEdESjdTNzBINjA3R0FTSVRPOVIwUy4u&route=shorturl",
     },
     {
         id: 6,
-        title: "Web Dinámica",
+        title: "Manual analista de compras",
         image: "/image-6.jpg",
         urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 7,
-        title: "Dark Web ",
-        image: "/image-7.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 8,
-        title: "E-commerce web",
-        image: "/image-8.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
+        urlDemo: "https://drive.google.com/file/d/1-BcHHzLhnUU0bDb006is6rRWouyz8pUH/view?usp=sharing",
     }
+
+    
 ];
 
 export const dataTestimonials = [
