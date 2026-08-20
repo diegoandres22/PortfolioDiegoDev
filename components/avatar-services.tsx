@@ -3,8 +3,8 @@ import { MotionTransition } from "./transition-component";
 
 const AvatarServices = () => {
     return (
-        <MotionTransition position='right' className="bottom-0 left-0 hidden md:inline-block md:absolute">
-            <Image src="/services.png" width={400} height={400} className="opacity-30 md:opacity-50 2xl:opacity-100 w-[220px] h-auto" alt="" aria-hidden="true" />
+        <MotionTransition position='right' className="hidden 2xl:block flex-shrink-0">
+            <Image src="/services.png" width={400} height={400} className="opacity-70 2xl:opacity-100 w-[160px] h-auto" alt="" aria-hidden="true" />
         </MotionTransition>
     );
 }
