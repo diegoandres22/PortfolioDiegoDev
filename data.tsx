@@ -3,21 +3,25 @@ import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Pencil, Computer, 
 export const socialNetworks = [
     {
         id: 1,
+        name: "Instagram",
         logo: <Instagram size={30} strokeWidth={2} />,
         src: "https://www.instagram.com/diegoandres.dj/",
     },
     {
         id: 2,
+        name: "LinkedIn",
         logo: <Linkedin size={30} strokeWidth={2} />,
         src: "https://www.linkedin.com/in/diegovelasquez22/",
     },
     {
         id: 3,
+        name: "Facebook",
         logo: <Facebook size={30} strokeWidth={2} />,
         src: "https://www.facebook.com/diego.velasquez.94695",
     },
     {
         id: 4,
+        name: "GitHub",
         logo: <Github size={30} strokeWidth={2} />,
         src: "https://github.com/diegoandres22",
     }
@@ -27,25 +31,25 @@ export const socialNetworks = [
 export const itemsNavbar = [
     {
         id: 1,
-        title: "Home",
+        title: "Inicio",
         icon: <HomeIcon size={25} strokeWidth={2} />,
         link: "/",
     },
     {
         id: 2,
-        title: "User",
+        title: "Sobre mí",
         icon: <UserRound size={25} strokeWidth={2} />,
         link: "/about-me",
     },
     {
         id: 3,
-        title: "Book",
+        title: "Servicios",
         icon: <BookText size={25} strokeWidth={2} />,
         link: "/services",
     },
     {
         id: 4,
-        title: "Target",
+        title: "Portafolio",
         icon: <CodeSquare size={25} strokeWidth={2} />,
         link: "/portfolio",
     }
@@ -149,92 +153,60 @@ export const serviceData = [
 
 export const dataPortfolio = [
     {
-        id: 4,
-        title: "Patea la perola",
+        id: 1,
+        title: "Patea la Perola",
+        category: "SaaS",
+        description: "Plataforma integral para gestionar y vender rifas digitales: los usuarios consultan premios, piden boletos y siguen el estado de su ticket con su correo, mientras el administrador crea sorteos, configura pagos y analiza métricas desde un panel centralizado.",
         image: "/image-4.jpg",
-        urlGithub: "#!",
+        stack: ["Next.js", "Tailwind CSS"],
         urlDemo: "https://patealaperola.vercel.app/",
     },
     {
-        id: 1,
-        title: "beescend",
-        image: "/image-1.jpg",
-        urlGithub: "#!",
-        urlDemo: "https://beescend.com/",
-    },
-    {
         id: 2,
-        title: "Tokin",
-        image: "/image-2.jpg",
-        urlGithub: "#!",
-        urlDemo: "https://curso.tokinprivacy.io/formacion/privacidad-total",
+        title: "Inmobiliaria <div>Flow",
+        category: "SaaS",
+        description: "Plataforma inmobiliaria todo-en-uno que centraliza miles de propiedades vía una API inteligente, permitiendo búsquedas y contacto en tiempo real con asesores. Panel administrativo para gestionar leads, equipos de agentes y automatizar ventas.",
+        image: "/inmobiliaria-divflow.png",
+        stack: ["Next.js", "React", "TypeScript", "Supabase", "Tailwind CSS", "Zod", "Upstash Redis"],
+        urlDemo: "https://inmobiliaria-divflow.vercel.app/",
     },
     {
         id: 3,
-        title: "Tribu Caribe",
-        image: "/image-3.jpg",
-        urlGithub: "#!",
-        urlDemo: "https://tribu-caribe-platform.vercel.app/",
-    },
-    {
-        id: 5,
-        title: "Pedido automatizado",
-        image: "/image-5.jpg",
-        urlGithub: "#!",
-        urlDemo: "https://forms.office.com/pages/responsepage.aspx?id=EplYV4vVe0qUwvAq70_NonBvEBpsTyNCtYoAR0M9YpBUNllDUEdESjdTNzBINjA3R0FTSVRPOVIwUy4u&route=shorturl",
-    },
-    {
-        id: 6,
-        title: "Manual analista de compras",
-        image: "/image-6.jpg",
-        urlGithub: "#!",
-        urlDemo: "https://drive.google.com/file/d/1-BcHHzLhnUU0bDb006is6rRWouyz8pUH/view?usp=sharing",
-    }
-
-    
-];
-
-export const dataTestimonials = [
-    {
-        id: 1,
-        name: "George Snow",
-        description:
-            "¡Increíble plataforma! Los testimonios aquí son genuinos y me han ayudado a tomar decisiones informadas. ¡Altamente recomendado!",
-        imageUrl: "/profile1.png",
-    },
-    {
-        id: 2,
-        name: "Juan Pérez",
-        description:
-            "Me encanta la variedad de testimonios disponibles en esta página. Es inspirador ver cómo otras personas han superado desafíos similares a los míos. ¡Gracias por esta invaluable fuente de motivación!",
-        imageUrl: "/profile2.png",
-    },
-    {
-        id: 3,
-        name: "María García",
-        description:
-            "Excelente recurso para obtener opiniones auténticas sobre diferentes productos y servicios. Me ha ayudado mucho en mis compras en línea. ¡Bravo por este sitio!",
-        imageUrl: "/profile3.png",
+        title: "Ecommerce <div>Flow",
+        category: "SaaS",
+        description: "E-commerce optimizado para ventas directas: el carrito se envía listo para ordenar por WhatsApp en un clic. Panel administrativo para gestionar productos, banners publicitarios y analizar el rendimiento del negocio.",
+        image: "/ecommerce-divflow.png",
+        stack: ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "Zod"],
+        urlDemo: "https://divflowecommerce.vercel.app/",
     },
     {
         id: 4,
-        name: "Laura Snow",
-        description:
-            "¡Qué descubrimiento tan fantástico! Los testimonios aquí son honestos y detallados. Me siento más seguro al tomar decisiones después de leer las experiencias compartidas por otros usuarios.",
-        imageUrl: "/profile4.png",
+        title: "Automatizaciones con n8n",
+        category: "Automatización n8n",
+        description: "Diseño e implementación de flujos de automatización con n8n para distintos clientes: integración de sistemas, sincronización de datos entre plataformas y eliminación de tareas manuales repetitivas. Proyectos bajo confidencialidad, sin demo pública.",
+        image: "/automatizaciones-n8n.png",
+        stack: [
+            "n8n",
+            "WhatsApp",
+            "Base de datos",
+            "Instagram",
+            "Meta",
+            "Google",
+            "Microsoft",
+            "Binance",
+            "Banco Banesco",
+            "Banco de Venezuela",
+            "+∞ herramientas más",
+        ],
     },
     {
         id: 5,
-        name: "Carlos Sánchez",
-        description:
-            "Una joya en la web. Los testimonios son fáciles de encontrar y están bien organizados. ¡Definitivamente mi destino número uno cuando necesito referencias confiables!",
-        imageUrl: "/profile5.png",
-    },
-    {
-        id: 6,
-        name: "Antonio Martínez",
-        description:
-            "¡Fantástico recurso para aquellos que buscan validación antes de tomar decisiones importantes! Los testimonios aquí son veraces y realmente útiles. ¡Gracias por simplificar mi proceso de toma de decisiones!",
-        imageUrl: "/profile6.png",
+        title: "<div>Flow",
+        category: "Consultoría",
+        role: "CEO & Fundador",
+        description: "Consultora tecnológica y desarrollo de productos digitales orientados a la eficiencia operativa, apalancando automatizaciones avanzadas de flujos de trabajo con n8n.",
+        image: "/divflow-startup.png",
+        stack: [],
+        urlDemo: "https://div-flow.vercel.app/",
     },
 ];

@@ -2,20 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  /* height: 100%; */
-}
 html,
 body {
-  /* height: 100%; */
   color: #fff;
   background: #000129;
 }
 
 main {
   background: #393a47;
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,

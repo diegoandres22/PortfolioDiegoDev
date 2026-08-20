@@ -1,10 +1,15 @@
-"use client"
+import type { Metadata } from "next";
 
 import { Avatar } from "@/components/avatar";
 import ContainerPage from "@/components/container-page";
 import CounterServices from "@/components/counter-services";
 import TimeLine from "@/components/time-line";
 import TransitionPage from "@/components/transition-page";
+
+export const metadata: Metadata = {
+    title: "Sobre mí | Diego Velasquez",
+    description: "Trayectoria profesional de Diego Velasquez: experiencia, formación y logros como desarrollador full stack.",
+};
 
 const AboutMePage = () => {
     return (

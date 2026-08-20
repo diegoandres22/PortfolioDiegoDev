@@ -1,18 +1,11 @@
-const tsPlugin = require('@typescript-eslint/eslint-plugin');
+const nextConfig = require('eslint-config-next');
 
 module.exports = [
   // ignore build and deps
   { ignores: ['.next/**', 'node_modules/**'] },
+  ...nextConfig,
   {
-    languageOptions: {
-      parser: require('@typescript-eslint/parser'),
-      parserOptions: {
-        ecmaVersion: 'latest',
-        sourceType: 'module',
-        ecmaFeatures: { jsx: true },
-      },
-    },
-    plugins: { '@typescript-eslint': tsPlugin },
+    files: ['**/*.{ts,tsx}'],
     rules: {
       'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
