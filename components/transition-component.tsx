@@ -6,7 +6,7 @@ import { fadeIn } from "@/utils/motion-transitions";
 export type MotionTransitionProps = {
     children: React.ReactNode;
     className?: string;
-    position: 'right' | 'bottom'
+    position: 'right' | 'bottom' | 'top';
 };
 
 export function MotionTransition(props: MotionTransitionProps) {

@@ -2,19 +2,18 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        secondary: "#f5741c",
+        secondary: "#00D4FF",
         darkBg: "#131424",
       },
       backgroundImage: {
         "gradient-cover":
-          "linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%)",
+           "linear-gradient(90deg, rgba(15, 15, 20, 1) 0%, rgba(0, 0, 56, 1) 60%, rgba(0, 57, 69, 1) 100%)",
       },
     },
   },

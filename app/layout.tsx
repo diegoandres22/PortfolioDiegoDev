@@ -2,18 +2,16 @@ import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 
 import "./globals.css";
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 
 import Navbar from "@/components/navbar";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Diego Velasquez Portfolio",
-  description: "Portfolio Diego Velasquez",
+  title: "Diego Velasquez",
+  description: "Portfolio de Diego Velasquez",
 };
 
 export default function RootLayout({
@@ -22,11 +20,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={urbanist.className}>
+    <html lang="es">
+      <body className={`${urbanist.className} flex flex-col min-h-screen`}>
         <Navbar />
         <Header />
-        {children}
+        <div className="flex-1">{children}</div>
+        <Footer />
       </body>
     </html>
   );
