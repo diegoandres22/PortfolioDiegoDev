@@ -158,7 +158,7 @@ export const dataPortfolio = [
         category: "SaaS",
         description: "Plataforma integral para gestionar y vender rifas digitales: los usuarios consultan premios, piden boletos y siguen el estado de su ticket con su correo, mientras el administrador crea sorteos, configura pagos y analiza métricas desde un panel centralizado.",
         image: "/image-4.jpg",
-        stack: ["Next.js", "Tailwind CSS"],
+        stack: ["Next.js", "FastAPI (Python)", "PostgreSQL", "Redux Toolkit", "Tailwind CSS", "Vercel", "Render"],
         urlDemo: "https://patealaperola.vercel.app/",
     },
     {

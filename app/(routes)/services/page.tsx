@@ -35,7 +35,7 @@ const ServicesPage = () => {
                     </div>
                 </div>
 
-                <CircleImage layout="flex" />
+                <CircleImage />
             </div>
         </ContainerPage>
     );

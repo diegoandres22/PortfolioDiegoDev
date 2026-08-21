@@ -1,6 +1,7 @@
 import { Database, Infinity as InfinityIcon, Landmark } from "lucide-react";
 import {
     SiBinance,
+    SiFastapi,
     SiGoogle,
     SiInstagram,
     SiMeta,
@@ -9,10 +10,13 @@ import {
     SiPostgresql,
     SiPrisma,
     SiReact,
+    SiRedux,
+    SiRender,
     SiSupabase,
     SiTailwindcss,
     SiTypescript,
     SiUpstash,
+    SiVercel,
     SiWhatsapp,
     SiZod,
 } from "react-icons/si";
@@ -29,7 +33,7 @@ const MicrosoftLogo = () => (
     </svg>
 );
 
-const SPECIAL_MORE_TOOLS = "herramientas más";
+const SPECIAL_MORE_TOOLS = "+∞ herramientas más";
 
 // Íconos de marca reconocibles cuando existen; badge de solo texto (o ícono genérico) cuando no aplica un logo real.
 const techIconMap: Record<string, React.ReactNode> = {
@@ -42,6 +46,10 @@ const techIconMap: Record<string, React.ReactNode> = {
     "PostgreSQL": <SiPostgresql />,
     "Zod": <SiZod />,
     "Upstash Redis": <SiUpstash />,
+    "FastAPI (Python)": <SiFastapi />,
+    "Redux Toolkit": <SiRedux />,
+    "Vercel": <SiVercel />,
+    "Render": <SiRender />,
     "n8n": <SiN8N />,
     "WhatsApp": <SiWhatsapp />,
     // Sin motor específico indicado: ícono genérico de base de datos (no es una marca puntual).

@@ -16,18 +16,24 @@ export const metadata: Metadata = {
 const PortfolioPage = () => {
 
     return (
-        <ContainerPage>
+        <ContainerPage wide>
             <TransitionPage />
-            <AvatarPortfolio />
-            <CircleImage />
-            <div className="flex flex-col justify-center h-full">
-                <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">Mis últimos <span className="font-bold text-secondary">trabajos realizados</span></h1>
+            {/* Avatar y animación son columnas reales del flex (no absolute):
+                así nunca pueden quedar detrás/debajo de las cards. */}
+            <div className="flex items-end justify-center gap-6 2xl:gap-10">
+                <AvatarPortfolio />
 
-                <div className="relative z-10 grid max-w-4xl gap-6 mx-auto mt-4 sm:grid-cols-2">
-                    {dataPortfolio.map((data) => (
-                        <PortfolioBox key={data.id} data={data} />
-                    ))}
+                <div className="flex flex-col justify-center h-full">
+                    <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">Mis últimos <span className="font-bold text-secondary">trabajos realizados</span></h1>
+
+                    <div className="grid max-w-4xl gap-6 mx-auto mt-4 sm:grid-cols-2">
+                        {dataPortfolio.map((data) => (
+                            <PortfolioBox key={data.id} data={data} />
+                        ))}
+                    </div>
                 </div>
+
+                <CircleImage size={250} />
             </div>
         </ContainerPage>
     );

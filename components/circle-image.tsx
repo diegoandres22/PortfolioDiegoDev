@@ -3,22 +3,18 @@
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 interface CircleImageProps {
-    // "absolute" (default): comportamiento original, usado en /portfolio detrás de las cards.
-    // "flex": columna real dentro de un flex, usado en /services para que quede
-    // a la derecha del contenido sin poder superponerse a él.
-    layout?: 'absolute' | 'flex';
+    // Ancho/alto en px. Cada página pasa el máximo que le entra sin
+    // desbordar según el ancho fijo de su propio contenido.
+    size?: number;
 }
 
-const CircleImage = ({ layout = 'absolute' }: CircleImageProps) => {
-    const className = layout === 'flex'
-        ? "hidden 2xl:block flex-shrink-0 w-[160px] h-[160px]"
-        : "bottom-0 right-0 hidden h-60 md:inline-block md:absolute";
-
+// Columna real dentro de un flex (nunca "absolute"): así queda siempre a la
+// derecha del contenido sin poder superponerse a él. Usado en /portfolio y /services.
+const CircleImage = ({ size = 180 }: CircleImageProps) => {
     return (
-        <div className={className}>
+        <div className="hidden 2xl:block flex-shrink-0" style={{ width: size, height: size }}>
             <DotLottieReact src="/CubeAnimation.json" loop autoplay />
         </div>
-
     );
 }
 
